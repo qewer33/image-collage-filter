@@ -6,7 +6,7 @@
 
 The script has 3 subcommands:
 
-```sh
+```bash
 # shows the help message
 python image_collage_filter.py help
 # applies the filter to image.png
