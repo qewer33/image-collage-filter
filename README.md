@@ -15,7 +15,7 @@ python image_collage_filter.py apply ./image.png
 python image_collage_filter.py profile ./image.png
 ```
 
-Here is an example image (the Budapest Parliament Building) in it's original form:
+Here is an example image (the Hungarian Parliament Building in Budapest) in it's original form:
 
 ![parliament](https://github.com/qewer33/image-collage-filter/blob/main/examples/parliament.jpg?raw=true)
 
