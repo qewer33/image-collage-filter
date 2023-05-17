@@ -19,11 +19,11 @@ Here is an example image (the Budapest Parliament Building) in it's original for
 
 ![parliament](https://github.com/qewer33/image-collage-filter/blob/main/examples/parliament.jpg?raw=true)
 
-And here it is ran trhough the script:
+And here it is ran trhough the script (download the image and zoom in for _disturbing_ detail):
 
 ![parliament_out](https://github.com/qewer33/image-collage-filter/blob/main/examples/parliament_out.png?raw=true)
 
-## Datset Generation
+## Dataset Generation
 
 For the `image_collage_filter.py` script to work, it needs 32x32 images categorized by their average colors. The `color_image_dataset_gen.py` (great naming) categorizes CIFAR-100 images by their median colors and exports them to `./generated-set` as png images.
 
