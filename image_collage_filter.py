@@ -7,6 +7,7 @@ from PIL import Image
 import numpy as np
 
 SET_DIR = "./generated-set"
+SET_IMG_SIZE = 32
 
 def main():
     match (sys.argv[1]):
@@ -52,7 +53,7 @@ def main():
             print("  python image-collage-filter.py apply ./examples/parliament.png")
             print("  python image-collage-filter.py apply ./examples/landscape.jpg landscape_out.png")
 
-# apply filter to the image given path and save it to te output path
+# apply filter to the image given path and save it to the output path
 def apply_filter(in_path, out_path, profile=False, profile_iter_count=1):
     palette = [x[0] for x in os.walk(SET_DIR)]
     palette.pop(0)
@@ -63,13 +64,13 @@ def apply_filter(in_path, out_path, profile=False, profile_iter_count=1):
     with Image.open(in_path) as img:
         out_img = Image.new("RGB", img.size)
         
-        for y in range(0, img.height, 32):
-            for x in range(0, img.width, 32):
-                # an implementation that gets the average value of the 32x32 area
+        for y in range(0, img.height, SET_IMG_SIZE):
+            for x in range(0, img.width, SET_IMG_SIZE):
+                # an implementation that gets the average value of the SET_IMG_SIZExSET_IMG_SIZE area
                 # would be a better fit here (commented out lines below) but
                 # it's currently way too slow
                 color = img.getpixel((x, y))
-                # area = img.copy().crop((x, y, x+32, y+32))
+                # area = img.copy().crop((x, y, x+SET_IMG_SIZE, y+SET_IMG_SIZE))
                 # color = get_average_color(area.getcolors())
                 
                 for p in palette:

@@ -25,5 +25,5 @@ And here it is ran trhough the script (download the image and zoom in for _distu
 
 ## Dataset Generation
 
-For the `image_collage_filter.py` script to work, it needs 32x32 images categorized by their average colors. The `color_image_dataset_gen.py` (great naming) categorizes CIFAR-100 images by their median colors and exports them to `./generated-set` as png images.
+For the `image_collage_filter.py` script to work, it needs 32x32 images categorized by their average colors. The `cifar_100_preprocessor.py` categorizes CIFAR-100 images by their median colors and exports them to `./generated-set` as png images.
 
