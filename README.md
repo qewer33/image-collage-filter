@@ -1,6 +1,6 @@
 ![banner](https://github.com/qewer33/image-collage-filter/blob/main/assets/banner.png?raw=true)
 
-`image_collage_filter.py` is python script that recreates an image as an image made up of smaller 32x32 images (like an image collage but the collage itself is an image). Explaining it is a bit rough, so just try it yourself and see!
+`image_collage_filter.py` is a python script that recreates an image as an image made up of smaller 32x32 images (like an image collage but the collage itself is an image). Explaining it is a bit rough, so just try it yourself and see!
 
 ## Usage
 
